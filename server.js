@@ -13,7 +13,7 @@ const http = require("http");
 const port = 3000;
 const server = http.createServer(app);
 //server.listen(port, hostname, function() {});
-server.listen(port, function () {
+server.listen(process.env.port||port, function () {
   console.log("Server is running: Port: " + port);
 });
 
