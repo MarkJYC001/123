@@ -237,7 +237,7 @@ var user_list = {
 var div1, layout_button, canvas; // = createDiv("Canvas")
 
 // Trial about the socket stuff
-socket = io.connect();
+socket = io.connect("https://ignisforum-7c8c8d028f38.herokuapp.com/");
 user_list.sockets.push(socket.id);
 
 sendViaSocket({
